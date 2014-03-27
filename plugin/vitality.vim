@@ -55,8 +55,10 @@ function! s:Vitality() " {{{
     " and <Esc>[I when it gains focus.
     "
     " TODO: Look into how this works with iTerm tabs.  Seems a bit wonky.
-    let enable_focus_reporting  = "\<Esc>[?1004h"
-    let disable_focus_reporting = "\<Esc>[?1004l"
+    " let enable_focus_reporting  = "\<Esc>[?1004h"
+    " let disable_focus_reporting = "\<Esc>[?1004l"
+    let enable_focus_reporting  = ""
+    let disable_focus_reporting = ""
 
     " These sequences save/restore the screen.
     " They should NOT be wrapped in tmux escape sequences for some reason!
